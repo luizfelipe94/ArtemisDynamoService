@@ -1,9 +1,10 @@
 import {
     table,
     attribute,
+    hashKey
 } from '@aws/dynamodb-data-mapper-annotations';
 
-@table('CampaignDelvieryStatus')
+@table('campaign-delivery-status')
 export default class CampaignDelvieryStatus{
     @attribute()
     uuid: string;

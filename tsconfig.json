@@ -12,5 +12,9 @@
         "newLine": "LF",
         "noEmitOnError": true,
         "skipLibCheck": true
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
 }

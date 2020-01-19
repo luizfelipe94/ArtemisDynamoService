@@ -32,5 +32,7 @@ router.post('/data', async (ctx: Koa.Context, next: () => Promise<any>) => {
 });
 
 router.post('/deliverystatus', CampaignDeliveryStatusController.save);
+router.get('/deliverystatus/:uuid', CampaignDeliveryStatusController.get);
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
